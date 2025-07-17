@@ -63,7 +63,7 @@ export default function ReportForm() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/reports", formData);
+      const res = await axios.post("https://mayor-helpline-cleanliness.onrender.com/api/reports", formData);
       setMessage("✅ Report submitted successfully!");
       setReportData({
         description: "",

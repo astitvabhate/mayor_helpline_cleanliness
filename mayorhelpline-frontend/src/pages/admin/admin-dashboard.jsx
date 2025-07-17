@@ -29,7 +29,7 @@ const AdminDashboard = () => {
 useEffect(() => {
   const fetchReports = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/reports");
+      const response = await axios.get("https://mayor-helpline-cleanliness.onrender.com/api/reports");
       setReports(response.data.reports);
     } catch (error) {
       console.error("❌ Error fetching reports:", error.message);
@@ -50,7 +50,7 @@ useEffect(() => {
     if (!confirm) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/reports/${id}`);
+      await axios.delete(`https://mayor-helpline-cleanliness.onrender.com/api/reports/${id}`);
       setReports((prev) => prev.filter((r) => r._id !== id));
     } catch (err) {
       console.error("Delete failed:", err);
@@ -243,7 +243,7 @@ useEffect(() => {
     try {
       const newStatus = e.target.value;
 
-      await axios.patch(`http://localhost:5000/api/reports/${report._id}`, {
+      await axios.patch(`https://mayor-helpline-cleanliness.onrender.com/api/reports/${report._id}`, {
         status: newStatus,
       });
 

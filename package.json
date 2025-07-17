@@ -6,17 +6,24 @@
   "type": "module",
   "scripts": {
     "start": "nodemon mayorhelpline-backend/server.js",
-    "build" : "npm install && npm install --prefix mayorhelpline-frontend && npm run build --prefix mayorhelpline-frontend",
+    "build": "npm install && npm install --prefix mayorhelpline-frontend && npm run build --prefix mayorhelpline-frontend",
     "dev": "nodemon mayorhelpline-backend/server.js"
   },
-  "keywords": ["express", "mongo", "urbanglow", "cleanliness", "reporting"],
+  "keywords": [
+    "express",
+    "mongo",
+    "urbanglow",
+    "cleanliness",
+    "reporting"
+  ],
   "author": "Astitva Bhate",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "mongoose": "^8.16.4"
+    "mongoose": "^8.16.4",
+    "multer": "^2.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

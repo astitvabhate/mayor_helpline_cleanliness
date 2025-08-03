@@ -5,6 +5,7 @@ import mohanYadavImage from "../assets/mohan_yadav.webp";
 import banner1 from "../assets/banner/1.jpeg";
 import banner2 from "../assets/banner/2.jpeg";
 import mayorImage from "../assets/images.jpeg";
+import commissionerImage from "../assets/priti_yadav.jpg";
 import videoSrc from "../assets/video/video.mp4";
 
 const Home = () => {
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* Main content card */}
-      <div className="relative z-10 w-full h-full max-w-sm backdrop-blur-2xl bg-white/80 border border-white/40 shadow-2xl rounded-3xl p-6 flex flex-col justify-between">
+      <div className="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl backdrop-blur-2xl bg-white/80 border border-white/40 shadow-2xl p-6 flex flex-col gap-6 transition-all duration-300">
         {/* Title */}
         <div className="text-center mb-6">
           <h1 className="text-4xl font-black bg-gradient-to-r from-emerald-600 via-teal-600 to-lime-600 bg-clip-text text-transparent mb-3 drop-shadow-lg animate-pulse">
@@ -46,7 +47,7 @@ const Home = () => {
         </div>
 
           {/* Green section as auto-play carousel */}
-          <div className="relative w-full h-32 rounded-2xl mb-8 shadow-lg border border-green-300/50 overflow-hidden">
+          <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 rounded-2xl mb-8 shadow-lg border border-green-300/50 overflow-hidden">
             <div className="absolute inset-0 z-0" />
             <img
               src={images[current]}
@@ -54,6 +55,7 @@ const Home = () => {
               className="w-full h-full object-cover rounded-2xl relative z-10 transition-opacity duration-700 ease-in-out"
             />
           </div>
+
 
 
         {/* Description */}
@@ -87,25 +89,30 @@ const Home = () => {
           </div>
         </div>
         {/* Leaders Section */}
-        <div className="text-center flex items-center">
-          <img
-          src={modijiImage}
-          alt="Leader"
-          className="w-25 h-30 object-cover rounded-full border-2 border-white shadow-lg mx-auto mb-4"
-        />
+<div className="w-full flex items-center justify-center gap-4 flex-wrap px-4">
+  <img
+    src={modijiImage}
+    alt="Leader"
+    className="w-25 h-20 object-cover rounded-full border-2 border-white shadow-lg"
+  />
+  <img
+    src={mohanYadavImage}
+    alt="Leader"
+    className="w-25 h-20 object-cover rounded-full border-2 border-white shadow-lg"
+  />
+  <img
+    src={mayorImage}
+    alt="Leader"
+    className="w-25 h-20 object-cover rounded-full border-2 border-white shadow-lg"
+  />
+  <img
+    src={commissionerImage}
+    alt="Commissioner"
+    className="w-25 h-20 object-cover rounded-full border-2 border-white shadow-lg"
+  />
+</div>
 
-        <img
-          src={mohanYadavImage}
-          alt="Leader"
-          className="w-25 h-30 object-cover rounded-full border-2 border-white shadow-lg mx-auto mb-4"
-        />        
 
-        <img
-          src={mayorImage}
-          alt="Leader"
-          className="w-25 h-30 object-cover rounded-full border-2 border-white shadow-lg mx-auto mb-4"
-        />
-        </div>
         
 
         {/* Footer */}

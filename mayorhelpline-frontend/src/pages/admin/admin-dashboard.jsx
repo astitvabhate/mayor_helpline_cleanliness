@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import modijiImage from "../../assets/modi_boss.jpg";
 import mohanjiImage from "../../assets/mohan_yadav.webp";
 import mayorImage from "../../assets/images.jpeg";
+import commissionerImage from "../../assets/priti_yadav.jpg";
 import banner1 from "../../assets/banner/1.jpeg";
 import banner2 from "../../assets/banner/2.jpeg";
 import { Menu, X } from "lucide-react";
@@ -163,6 +164,11 @@ useEffect(() => {
             <img
               src={mayorImage}
               alt="Mayor"
+              className="h-14 w-14 sm:h-20 sm:w-20 object-cover rounded-full shadow border-2 border-white"
+            />
+            <img
+              src={commissionerImage}
+              alt="Commissioner"
               className="h-14 w-14 sm:h-20 sm:w-20 object-cover rounded-full shadow border-2 border-white"
             />
           </div>

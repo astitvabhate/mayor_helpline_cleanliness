@@ -9,6 +9,7 @@ import yadavjiImage from "../../assets/mohan_yadav.webp";
 import mayorImage from "../../assets/images.jpeg";
 import { Link } from "react-router-dom";
 import videoSrc from "../../assets/video/video.mp4";
+import commissionerImage from "../../assets/priti_yadav.jpg";
 
 
 
@@ -123,6 +124,12 @@ export default function ReportForm() {
               alt="Mayor"
               className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full border-4 border-white shadow-md"
             />
+              <img
+              src={commissionerImage}
+              alt="commissioner"
+              className="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full border-4 border-white shadow-md"
+            />
+            
           </div>
         </div>
         
